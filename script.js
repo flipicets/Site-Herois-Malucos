@@ -8,3 +8,16 @@ const herois = [
 const corpoTabela = document.getElementById("corpoTabela");
 const campoBusca = document.getElementById("campoBusca");
 const botaoOrdenar = document.getElementById("botaoOrdenar");
+
+function mostrarHerois(lista){
+    corpoTabela.innerHTML = "";
+    lista.forEach(function (heroi){
+        const linha = document.createElement("tr");
+        linha.innerHTML = 
+            "<td>" + heroi.nome + "</td>" + 
+            "<td>" + heroi.universo + "</td>" + 
+            "<td>" + heroi.poder + "</td>" + 
+            "<td>" + heroi.ano + "</td>";
+        corpoTabela.appendChild(linha);
+    })
+}
