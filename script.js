@@ -40,3 +40,4 @@ botaoOrdenar.addEventListener("click", function () {
     crescente = !crescente;
     mostrarHerois(herois);
 });
+mostrarHerois(herois);
