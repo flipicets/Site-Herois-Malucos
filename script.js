@@ -31,3 +31,12 @@ campoBusca.addEventListener("input", function () {
     });
     mostrarHerois(filtrados);
 });
+
+let crescente = true;
+botaoOrdenar.addEventListener("click", function () {
+    herois.sort(function (a, b) {
+        return crescente ? a.ano - b.ano : b.ano - a.ano;
+    });
+    crescente = !crescente;
+    mostrarHerois(herois);
+});
