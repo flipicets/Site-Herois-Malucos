@@ -21,3 +21,13 @@ function mostrarHerois(lista){
         corpoTabela.appendChild(linha);
     })
 }
+
+campoBusca.addEventListener("input", function () {
+    const termo = campoBusca.value.toLowerCase();
+    const filtrados = herois.filter(function (heroi) {
+        return heroi.nome.toLowerCase().includes(termo)
+            || heroi.universo.toLowerCase().includes(termo)
+            || heroi.poder.toLowerCase().includes(termo);
+    });
+    mostrarHerois(filtrados);
+});
