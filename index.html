@@ -9,6 +9,7 @@
 <body>
 
     <h1>Enciclopédia Sinistra</h1>
+    <h3>Os heróis mais malucos do universo</h3>
 
     <h2>Super-Rúbia</h2>
     <p><b>Super-Rúbia</b> é a <i>pessoa mais forte de todo o universo</i>
@@ -106,42 +107,22 @@
         </ol>
 
     </p>
+    <h2>Lista de heróis</h2>
+        <input id="campoBusca" type="text" placeholder="Buscar por nome, universo ou poder principal">
 
-    <table>
-        <tr>
-            <th>Nome</th>
-            <th>Universo</th>
-            <th>Poder principal</th>
-            <th>Primeira aparição</th>
-        </tr>
+    <button id="botaoOrdenar">Ordenar por ano</button>
 
-        <tr>
-            <td>Super-rubia</td>
-            <td>O nosso né</td>
-            <td>Forte</td>
-            <td>2007 - informação delicada</td>
-        </tr>
+    <table> 
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Universo</th>
+                <th>Poder principal</th>
+                <th>Primeira aparição</th>
+            </tr>
+        </thead>
 
-        <tr>
-            <td>fofoman</td>
-            <td>também o nosso</td>
-            <td>fofinhoooo UwU :3</td>
-            <td>2002 - Avenida João Gualberto, 1946</td>
-        </tr>
-
-        <tr>
-            <td>ursao</td>
-            <td>de valente da disney (passou para o nosso ano passado)</td>
-            <td>urso grande peludo gostoso menine</td>
-            <td>pucpr 2026</td>
-        </tr>
-
-        <tr>
-            <td>gale gigantamax</td>
-            <td>pokemon (tambem se mudou mas foi no ano retrasado)</td>
-            <td>gigante imenso</td>
-            <td>IBGE - CURITIBA BRASIL EU TE AMO</td>
-        </tr>
+       <tbody id="corpoTabela"></tbody>
 
     </table>
 
