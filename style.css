@@ -170,3 +170,32 @@ button {
     box-shadow: 4px 4px 0px #d900ff;
     border-radius: 6px;
 }
+
+#campoBusca {
+    background-color: #000;
+    color: #fff;
+    font-family: inherit; 
+    font-size: 1.4rem;
+    padding: 15px 20px;
+    width: 100%;
+    max-width: 600px; 
+    border: 4px solid #d900ff; 
+    border-radius: 8px;
+    box-shadow: 8px 8px 0px #000;
+    margin-bottom: 20px;
+    outline: none; 
+    transition: all 0.2s ease-in-out;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+#campoBusca::placeholder {
+    color: #d900ff; 
+    opacity: 0.8;
+}
+
+#campoBusca:focus {
+    border-color: #2fff00;
+    box-shadow: 8px 8px 0px #d900ff; 
+    transform: translate(-3px, -3px); 
+}
